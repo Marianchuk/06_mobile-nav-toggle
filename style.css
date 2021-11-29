@@ -361,13 +361,6 @@ a {
 
 }
 
-@supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
-        background: hsl( var(--clr-white) / 0.05);
-        backdrop-filter: blur(1.5rem);
-    }
-}
-
 @media (max-width: 57rem) {
     .navigation {
         --underline-gap: 0rem;
@@ -385,7 +378,7 @@ a {
         transition: transform 500ms ease-in-out;
           
     }
-    .navigation[data-visible="true"] {
+    .navigation[data-visible='true'] {
         transform: translateX(0);
     }
     .mobile-nav-toggle {
