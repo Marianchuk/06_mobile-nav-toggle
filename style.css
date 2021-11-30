@@ -361,6 +361,12 @@ a {
 
 }
 
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl( var(--clr-white) / 0.05);
+        backdrop-filter: blur(1.5rem);
+    }
+}
 
 @media (max-width: 57rem) {
     .navigation {
@@ -372,7 +378,6 @@ a {
         margin: 0;
         flex-direction: column;
         font-size: var(--fs-500);
-
         background: hsl( var(--clr-yellow) / 0.05);
         backdrop-filter: blur(1.5rem);
         transform: translateX(100%);
